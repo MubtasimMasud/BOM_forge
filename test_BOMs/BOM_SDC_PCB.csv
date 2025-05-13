@@ -1,0 +1,56 @@
+,Line #,Name,Description,Designator,Revision ID,Revision Status,Quantity,Manufacturer 1,Manufacturer Part Number 1,Manufacturer Lifecycle 1,Supplier 1,Supplier Part Number 1,Supplier Unit Price 1,Supplier Subtotal 1
+,,1uF,"Chip Capacitor, 1 uF, +/- 10%, 25 V, -55 to 125 degC, 1206 (3216 Metric), RoHS, Tape and Reel",C33,Unknown server,Unknown server,1,Samsung,CL31B105KBHNNNE,Volume Production,Digikey,1276-1068-6-ND,0.12,0.12
+,,4.7uF,"Chip Multilayer Ceramic Capacitors for General Purpose, 1206, 4.7uF, X7R, 15%, 10%, 50V",C36,Unknown server,Unknown server,1,Murata,GRM31CR71H475KA12L,Volume Production,Future Electronics,5114127,0.34,0.34
+,,BAT54C_R1_00001,Schottky Diode,"D1, D2, D3, D4, D5",,,5,,,,,,,
+,,1N4742A,"Zener Diode, 12V, 1W, 5%, -65 to 200 degC, 2-Pin DO-41, Body 2.72 x 5.2 mm, RoHS","D6, D7, D8, D9, D10, D11, D12, D13",Unknown server,Unknown server,8,National Semiconductor,1N4742A,,,,,
+,,LTST-C193TBKT-5A,LED BLUE CLEAR CHIP SMD,D18,Unknown server,Unknown server,1,Vishay Lite-On,LTST-C193TBKT-5A,Volume Production,Digikey,160-1827-1-ND,0.31,0.31
+,,TLV9104IPWR,Op Amp,"IC3, IC5, IC7",,,3,,,,,,,
+,,SN74LVC1G98DBVR,Configurable Logic Gate (-),IC4,,,1,,,,,,,
+,,TLV9102IDR,Integrated Circuit,IC6,,,1,,,,,,,
+,,LMR51610YFDBVR,Integrated Circuit,IC8,,,1,,,,,,,
+,,DTM1312PA12PBR008,Connector,J1,,,1,,,,,,,
+,,V23079B1201B301,V23079B1201B301 DPDT,"K1, K2, K3, K4",,,4,,,,,,,
+,,MWSA0603S-330MT,Inductor,L1,,,1,,,,,,,
+,,SI2307CDS-T1-GE3,MOSFET P-CH 30V 3.5A SOT23-3,"Q5, Q6",Unknown server,Unknown server,2,Vishay Siliconix,SI2307CDS-T1-GE3,Volume Production,Newark,55R1910,0.047,0.094
+,,2N7002-G,MOSFET N-CH 60V 0.115A SOT23-3,"Q7, Q8",Unknown server,Unknown server,2,Microchip Supertex,2N7002-G,,,,,
+,,1k,0603 Resistor,"R5, R36, R61, R63, R64, R67",,,6,,,,,,,
+,,1.2k,0603 Resistor,"R6, R8",,,2,,,,,,,
+,,10k,0603 Resistor,"R7, R11, R12, R15, R17, R19, R20, R33, R34, R42, R43, R46, R52, R54, R55, R57, R68, R69",,,18,,,,,,,
+,,100k,0603 Resistor,R9,,,1,,,,,,,
+,,330k,0603 Resistor,R10,,,1,,,,,,,
+,,1.6k,0603 Resistor,"R13, R14, R44, R45, R48, R58, R66",,,7,,,,,,,
+,,4.7k,0603 Resistor,"R16, R22",,,2,,,,,,,
+,,47k,0603 Resistor,"R18, R21",,,2,,,,,,,
+,,0R3J,Jumper 0603 (1608 Metric),"R23, R24, R27, R28, R29, R30, R31, R32",Unknown server,Unknown server,8,,,,,,,
+,,3296Y-1-103LF,TRIMMER 10K OHM 0.5W PC PIN TOP,"R25, R26",Unknown server,Unknown server,2,Bourns,3296Y-1-103LF,Volume Production,Digikey,3296Y-103LF-ND,2.05,4.1
+,,130k,0603 Resistor,"R35, R60, R62",,,3,,,,,,,
+,,3.3k,0603 Resistor,"R37, R38, R53, R56, R59",,,5,,,,,,,
+,,6.8k,0603 Resistor,R41,,,1,,,,,,,
+,,10k,"Chip Resistor, 10 KOhm, +/- 1%, 100 mW, -55 to 155 degC, 0603 (1608 Metric), RoHS, Tape and Reel",R47,Unknown server,Unknown server,1,Vishay,CRCW060310K0FKEA,Volume Production,Newark,61M5335,0.01,0.01
+,,20k,0603 Resistor,R50,,,1,,,,,,,
+,,4k,Resistor,R51,,,1,,,,,,,
+,,"AC0603FR-071KL, 1k",RES 1kΩ 1.00% 0.1W 0603,"R74, R77, R78, R79, R80",Unknown server,Unknown server,5,Yageo,AC0603FR-071KL,Volume Production,Mouser,603-AC0603FR-071KL,0.009,0.09
+,,150k,"RES Thick Film, 150kΩ, 1%, 0.33W, 100ppm/°C, 0603",R75,Unknown server,Unknown server,1,Vishay Dale,CRCW0603150KFKEAHP,Volume Production,Mouser,71-CRCW0603150KFKEAH,0.16,0.16
+,,28k,"RES Thick Film, 28kΩ, 1%, 0.1W, 100ppm/°C, 0603",R76,Unknown server,Unknown server,1,Vishay,CRCW060328K0FKEA,Volume Production,Newark,52K8356,0.003,0.003
+,,2k,ERJ-8ENF2001V,R82,Unknown server,Unknown server,1,Panasonic,ERJ-8ENF2001V,Not Recommended for New Design,Newark,65T8855,0.018,0.018
+,,47k,CRCW120647K0FKEA,R83,Unknown server,Unknown server,1,Vishay,CRCW120647K0FKEA,Volume Production,Mouser,71-CRCW1206-47K-E3,0.1,0.1
+,,"10K, 10k",RES SMD 10K OHM 1% 1/3W 0603,"R85, R93",Unknown server,Unknown server,2,Vishay,CRCW060310K0FKEAHP,Volume Production,Digikey,541-10.0KSDKR-ND,0.14,0.28
+,,1k,"RES Thick Film, 1kΩ, 1%, 0.1W, 100ppm/°C, 0603","R1, R86, R96, R97",Unknown server,Unknown server,4,Vishay Dale,CRCW06031K00FKEA,Volume Production,Newark,61M5328,0.017,0.17
+,,5011,"Test Point, Black, Through Hole, RoHS, Bulk","TP1, TP2, TP3, TP4, TP5, TP6, TP7, TP8, TP9, TP10, TP11, TP12, TP14, TP15, TP17, TP18, TP19",Unknown server,Unknown server,17,Keystone Electronics,5011,Volume Production,Future Electronics,5322706,0.16,2.72
+,,APTD3216CGCK,LED GREEN CLEAR 2SMD,TSSI_GRN,Unknown server,Unknown server,1,Kingbright,APTD3216CGCK,Volume Production,Mouser,604-APTD3216CGCK,0.33,0.33
+,,APTL3216SURCK,LED RED CLEAR CHIP SMD,TSSI_RED,Unknown server,Unknown server,1,Kingbright,APTL3216SURCK,,Digikey,754-1165-1-ND,0.31,0.31
+,,TLC555QDR,IC OSC SGL TIMER 2.1MHZ 8-SOIC,U1,Unknown server,Unknown server,1,Texas Instruments,TLC555QDR,Volume Production,Digikey,296-10341-1-ND,0.63,0.63
+,,"74LVC1G32GV,125",IC GATE OR 1CH 2-INP 5TSOP,U2,Unknown server,Unknown server,1,Nexperia,"74LVC1G32GV,125",Volume Production,Mouser,771-LVC1G32GV125,0.13,0.13
+,,100nF,0603 CAP,C1,,,1,,,,,,,
+,,100nF,0603 CAP,"C2, C7, C8, C9, C10, C14",,,6,,,,,,,
+,,1uF,0603 CAP,"C3, C4, C6, C11, C12, C13, C15, C17, C19, C20, C21, C22, C23, C24, C25, C27, C28",,,17,,,,,,,
+,,10nF,0603 CAP,"C5, C16, C26",,,3,,,,,,,
+,,10uF,0603 CAP,C18,,,1,,,,,,,
+,,10k,0603 Resistor,R49,,,1,,,,,,,
+,,1.66k,0603 Resistor,R65,,,1,,,,,,,
+,,MCP654,Integrated Circuit,"IC1, IC2",,,2,,,,,,,
+,,2.2uF,GRM21BD72A225KE01L,C29,,,1,,,,,,,
+,,"100uF, 100nF",CAP CER 100UF 6.3V X5R 1210,"C30, C31, C37",Unknown server,Unknown server,3,,,,,,,
+,,22uF,"Chip Multilayer Ceramic Capacitors for General Purpose, 0805, 22uF, X5R, 15%, 20%, 6.3V",C32,Unknown server,Unknown server,1,,,,,,,
+,,0.1uF,"CAP, Ceramic, 0.1 uF, 10%, 16 V, 0603, RoHS, Tape and Reel","C34, C35",Unknown server,Unknown server,2,,,,,,,
+,,100nf,CL10B104KA8NNNC,C38,,,1,,,,,,,

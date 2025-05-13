@@ -1,0 +1,38 @@
+,Line #,Name,Description,Designator,Revision ID,Revision Status,Quantity,Value,Manufacturer 1,Manufacturer Part Number 1,Manufacturer Lifecycle 1,Supplier 1,Supplier Part Number 1,Supplier Unit Price 1,Supplier Subtotal 1
+,,0603 CAP,0603 Cpacitor,"C1, C12, C13, C14, C15, C16, C17, C18, C35, C36, C41, C45, C61, C62, C67, C71",,,16,100n,,,,,,,
+,,0603 CAP,0603 Cpacitor,"C2, C3",,,2,10pF,,,,,,,
+,,0603 CAP,0603 Cpacitor,"C4, C5, C7, C9, C11, C19, C22, C23, C24, C25, C26, C27, C28, C29, C30, C31, C32, C33, C39, C46, C48, C49, C50, C51, C52, C53, C54, C55, C56, C57, C58, C59, C65, C72",,,34,1u,,,,,,,
+,,1206 Capacitor,1206 Capacitor,"C6, C8, C10, C38, C43, C44, C47, C64, C69, C70, C73",,,11,,,,,,,,
+,,0603 CAP,0603 Cpacitor,"C20, C40, C66",,,3,10n,,,,,,,
+,,0603 CAP,0603 Cpacitor,C21,,,1,2.2u,,,,,,,
+,,0603 CAP,0603 Cpacitor,"C34, C60",,,2,470n,,,,,,,
+,,0603 CAP,0603 Cpacitor,"C37, C63",,,2,1uF,,,,,,,
+,,0603 CAP,0603 Cpacitor,"C42, C68",,,2,4.7u,,,,,,,
+,,1N5353BG,"5 W Zener Voltage Regulator, 2-Pin Surmetic(TM) 40, Pb-Free, Bulk Box",D1,Unknown server,Unknown server,1,,ON Semiconductor,1N5353BG,Volume Production,Arrow Electronics,1N5353BG,0.4434,0.4434
+,,0603 Ferrite,0603 Ferrite Bead,"FB1, FB2, FB3, FB4, FB5",,,5,330R,,,,,,,
+,,150060YS75000,Yellow LED,FLT,,,1,,,,,,,,
+,,ISO6761DWR,Integrated Circuit,"IC1, IC3",,,2,,,,,,,,
+,,ADS114S08BIRHBT,Integrated Circuit,"IC2, IC4",,,2,,,,,,,,
+,,3-794630-8,Connector,J1,,,1,,,,,,,,
+,,5-794630-4,Connector,"J2, J4",,,2,,,,,,,,
+,,3-794630-2,Connector,"J3, J5",,,2,,,,,,,,
+,,M4,M4 Mounting Hole,"MH1, MH2, MH3, MH4",,,4,,,,,,,,
+,,61300511121,,P1,Unknown server,Unknown server,1,,Wurth Electronics,61300511121,Volume Production,Mouser,710-61300511121,0.26,0.26
+,,PQP3-D12-S5-D,Power Supply,"PS1, PS2",,,2,,,,,,,,
+,,150060GS75000,Green LED,PWR,,,1,,,,,,,,
+,,0603 Resistor,0603 Resistor,"R2, R8",,,2,100R,,,,,,,
+,,0603 Resistor,0603 Resistor,R3,,,1,47R,,,,,,,
+,,0603 Resistor,0603 Resistor,R4,,,1,1.2k,,,,,,,
+,,0603 Resistor,0603 Resistor,R5,,,1,4.7k,,,,,,,
+,,0603 Resistor,0603 Resistor,R6,,,1,1.5k,,,,,,,
+,,0603 Resistor,0603 Resistor,R7,,,1,120R DNP,,,,,,,
+,,0603 Resistor,0603 Resistor,"R9, R10, R11, R12, R13, R14, R21, R22, R23, R24, R25, R26, R33, R34, R35, R36, R37, R38, R45, R46, R47, R48, R49, R50",,,24,680R,,,,,,,
+,,0603 Resistor,0603 Resistor,"R15, R16, R17, R18, R19, R20, R27, R28, R29, R30, R31, R32, R39, R40, R41, R42, R43, R44, R51, R52, R53, R54, R55, R56",,,24,1k,,,,,,,
+,,CJS-1201TA1,Switch,S1,,,1,,,,,,,,
+,,STM32F446RET6,IC MCU 32BIT 512KB FLASH 64LQFP,U1,Unknown server,Unknown server,1,,STMicroelectronics,STM32F446RET6,Volume Production,Future Electronics,5070922,6.03,6.03
+,,SN65HVD230DR,IC TRANSCEIVER HALF 1/1 8SOIC,U2,Unknown server,Unknown server,1,,Texas Instruments,SN65HVD230DR,Volume Production,Mouser,595-SN65HVD230DR,2.5,2.5
+,,ISP452,"Smart Power High-Side-Switch for Industrial Applications, 5 to 34 V Operating, -30 to 85 degC, SOT223, Reel, Green",U3,Unknown server,Unknown server,1,,Infineon,ISP452,Volume Production,Mouser,726-ISP452,2.1,2.1
+,,LDL1117S50R,IC REG LINEAR 5V 1.2A SOT223,"U4, U5",Unknown server,Unknown server,2,,STMicroelectronics,LDL1117S50R,Volume Production,Newark,14AC6966,0.155,0.31
+,,LDL1117S33R,IC REG LINEAR 3.3V 1.2A SOT223,"U6, U7, U8",Unknown server,Unknown server,3,,STMicroelectronics,LDL1117S33R,Volume Production,Digikey,497-17239-1-ND,0.83,2.49
+,,X322516MLB4SI,Crystal or Oscillator,Y1,,,1,,,,,,,,
+,,0603 Resistor,0603 Resistor,R1,,,1,10k,,,,,,,

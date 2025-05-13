@@ -1,0 +1,5 @@
+,Line #,Name,Description,Designator,Revision ID,Revision Status,Quantity,Manufacturer 1,Manufacturer Part Number 1,Manufacturer Lifecycle 1,Supplier 1,Supplier Part Number 1,Supplier Unit Price 1,Supplier Subtotal 1
+,,,LED RGB DIFFUSED 6PLCC SMD,"D1, D2, D3, D4, D5, D6, D7, D8",CMP-13977-000019-1,Up to date,8,Cree,CLP6C-FKB-CM1Q1H1BB7R3R3,Unknown,Digikey,CLP6C-FKB-CM1Q1H1BB7R3R3CT-ND,0.79,6.32
+,,1565749-1,Connector,J1,,,1,,,,,,,
+,,1k Ohms,RES SMD 1K OHM 1% 1/2W 0805,"R1, R3",CMP-05422-000125-1,Up to date,2,Panasonic,ERJ-P06F1001V,Volume Production,Digikey,P16058CT-ND,0.17,0.34
+,,768 Oohms,Resistor,"R2, R4",,,2,,,,,,,

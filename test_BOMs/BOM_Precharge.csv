@@ -1,0 +1,42 @@
+,Name,Description,Designator,Part Number,Price,Qty
+,150080GS75000,"WURTH ELEKTRONIK - 150080GS75000 - LED, Green, SMD, 0805, 30 mA, 3.2 V, 520 nm","90%, IR, PRCH, PWR",,,4
+,5011,"Test Point, Black, Through Hole, RoHS, Bulk","ACCU, GND, RC, TS",,,4
+,4.7uF 1206,"Capacitor, Ceramic, SMD, 1206, 4.7uF","C1, C2",,,2
+,100nF 1206,"Capacitor, Ceramic, SMD, 1206, 100nF","C3, C4, C5, C6, C7, C24",,,6
+,100pF 1206,"Capacitor, Ceramic, SMD, 1206, 100pF","C8, C23",,,2
+,10nF,"Capacitor, Ceramic, SMD, 0805, 10nF","C9, C14, C16",,,3
+,1uF,"Capacitor, Ceramic, SMD, 0805, 1uF","C10, C11, C15, C17, C18",,,5
+,100nF,"Capacitor, Ceramic, SMD, 0805, 100nF","C12, C13, C19, C21",,,4
+,2.2uF,"Capacitor, Ceramic, SMD, 0805, 2.2uF",C20,,,1
+,22uF,"Capacitor, Ceramic, SMD, 0805, 22uF",C22,,,1
+,100pF,"Capacitor, Ceramic, SMD, 0805, 100pF","C25, C26, C27, C28",,,4
+,1N4742A,"Zener Diode, 12V, 1W, 5%, -65 to 200 degC, 2-Pin DO-41, Body 2.72 x 5.2 mm, RoHS","D1, D2, D4",,,3
+,BAT54C,DIODE ARRAY SCHOTTKY 30V SOT23-3,D3,,,1
+,SMBJ33CA,TVS DIODE 33V 53.3V SMB,D5,,,1
+,150080RS75000,LED Uni-Color Red 630nm 2-Pin Chip 0805(2012Metric) T/R,"FAST, FLT, RLY, SLOW",,,4
+,ACPL-C870-000E,Integrated Circuit,"IC1, IC2",,,2
+,SN74LVC1G98DBVR,Integrated Circuit,"IC3, IC4",,,2
+,1-770966-1,Connector,"J1, J2, J3",,,3
+,4-794618-2,Connector,J5,,,1
+,3-1393788-3,RELAY GEN PURPOSE DPDT 2A 5VDC,K1,,,1
+,G5V-1-DC5,RELAY GEN PURPOSE SPDT 1A 5VDC,K2,,,1
+,MWSA0603S-330MT,33uH Inductor,L1,,,1
+,R1SE8-0505-R,5V to 5V dc dc converter,PS1,,,1
+,2N7002-7-F,MOSFET N-CH 60V 115MA SOT23-3,Q1,,,1
+,DMN4026SSD-13,MOSFET (N-Channel),"Q2, Q3, Q4, Q5",,,4
+,1M 1206,"Resistor, SMD, 1206, 1M","R1, R2, R3, R4, R5, R6",,,6
+,9.1k 1206,"Resistor, SMD, 1206, 9.1k",R8,,,1
+,10k 1206,"Resistor, SMD, 1206, 10k",R9,,,1
+,10k,"Resistor, SMD, 0805, 10k","R10, R12, R13, R16, R19, R20, R21, R22, R24, R25, R26, R30, R32, R37, R38, R41, R43, R44, R53, R55, R58, R59",,,22
+,0k Jumper,"Resistor, SMD, 0805, 0k","R11, R29, R35",,,3
+,0k Jumper (DNP),"Resistor, SMD, 0805, 0k","R14, R39, R40",,,3
+,100k,"Resistor, SMD, 0805, 100k","R15, R18, R23, R34, R36",,,5
+,1k,"Resistor, SMD, 0805, 1k","R17, R28, R31, R42, R46, R48, R49, R50, R51, R52, R54, R57",,,12
+,825k,"Resistor, SMD, 0805, 825k",R27,,,1
+,3296Y-1-103LF,TRIMMER 10K OHM 0.5W PC PIN TOP,R33,,,1
+,150k,"Resistor, SMD, 0805, 150k",R45,,,1
+,28k,"Resistor, SMD, 0805, 28k",R47,,,1
+,550k,"Resistor, SMD, 0805, 550k",R56,,,1
+,TLV9104IPWR,IC GEN PURP 4 CIRC 14TSSOP,"U1, U2",,,2
+,TLV9102IDR,IC OPAMP POWER 2 CIRCUIT 8SOIC,U3,,,1
+,LMR51610XQDBVRQ1,No Description Available,U4,,,1
