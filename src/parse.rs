@@ -3,7 +3,7 @@ use csv::{ReaderBuilder, StringRecord};
 use std::collections::HashMap;
 use thiserror;
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct PreprocessedBOMEntry {
     name: String,
     description: String,
@@ -64,8 +64,8 @@ pub fn find_ambigious_names(rows: Vec<PreprocessedBOMEntry>) -> Vec<String> {
     ambigious_elements
 }
 // Seeing what values are designated to which designators to address ambigious Name Coulms
-// returns Hashmap<Designator, Value> from the CPL file
-pub fn parse_cpl(path: &str) -> Result<HashMap<String, String>> {
+// returns Hashmap<Value, Designator> from the CPL file
+pub fn parse_cpl(path: &str) -> Result<Vec<(String, String)>> {
     let mut rdr = ReaderBuilder::new().has_headers(false).from_path(path)?;
 
     //Finding the header within the CPL file cuz it has an annoying title block
@@ -93,7 +93,7 @@ pub fn parse_cpl(path: &str) -> Result<HashMap<String, String>> {
         .get("Comment")
         .ok_or_else(|| anyhow!("invalid index"))?;
 
-    let mut parts_map: HashMap<String, String> = HashMap::new();
+    let mut parts_map: Vec<(String, String)> = Vec::new();
     for result in rdr.records() {
         let record = result?;
         let designator = record
@@ -107,14 +107,65 @@ pub fn parse_cpl(path: &str) -> Result<HashMap<String, String>> {
             .ok_or_else(|| anyhow!("could not get comment"))?
             .to_string();
 
-        parts_map.insert(designator, comment);
+        parts_map.push((comment, designator));
     }
     Ok(parts_map)
 }
 
-fn get_replacements_for_ambigious(
-    cpl_parts_map: HashMap<String, String>,
+pub fn fix_ambigious_rows(
+    cpl_parts: Vec<(String, String)>,
     bom_entries: Vec<PreprocessedBOMEntry>,
-) -> Vec<PreprocessedBOMEntry> {
-    todo!()
+) -> Result<Vec<PreprocessedBOMEntry>> {
+    let ambigous_names = find_ambigious_names(bom_entries.clone());
+    let fixed_entries = get_replacements_for_ambigious(cpl_parts.clone(), bom_entries.clone())?;
+
+    let mut filtered_bom: Vec<PreprocessedBOMEntry> = bom_entries
+        .clone()
+        .into_iter()
+        .filter(|entry| {
+            for name in ambigous_names.iter() {
+                if &entry.name == name {
+                    return false;
+                }
+            }
+            true
+        })
+        .collect();
+    for entry in fixed_entries {
+        filtered_bom.push(entry);
+    }
+    Ok(filtered_bom)
+}
+
+fn get_replacements_for_ambigious(
+    cpl_parts: Vec<(String, String)>,
+    bom_entries: Vec<PreprocessedBOMEntry>,
+) -> Result<Vec<PreprocessedBOMEntry>> {
+    let cases = find_ambigious_names(bom_entries);
+
+    let mut fixed_rows: Vec<PreprocessedBOMEntry> = Vec::new();
+    for case in cases {
+        // find designators for each value(name)
+        let names: Vec<String> = case.clone().split(',').map(|s| s.to_string()).collect();
+        for name in names {
+            let entry = PreprocessedBOMEntry {
+                name: name.clone(),
+                description: String::new(),
+                mpn: String::new(),
+                designators: find_designators_for_name(&name, &cpl_parts),
+            };
+            fixed_rows.push(entry);
+        }
+    }
+    Ok(fixed_rows)
+}
+
+fn find_designators_for_name(part_name: &str, cpl_parts: &Vec<(String, String)>) -> Vec<String> {
+    let designators: Vec<String> = cpl_parts
+        .clone()
+        .into_iter()
+        .filter(|(name, _)| name == part_name)
+        .map(|(_, designator)| designator)
+        .collect();
+    designators
 }

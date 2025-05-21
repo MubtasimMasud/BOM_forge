@@ -5,9 +5,8 @@
 //  / ___ / /_/ / ,< / /_/ (__  ) / / /  / /  / / /_/ (__  ) /_/ / /_/ /
 // /_/  |_\__,_/_/|_|\__,_/____/_/ /_/  /_/  /_/\__,_/____/\__,_/\__,_/
 use anyhow::Result;
-use std::io;
 
-use parse::{find_ambigious_names, parse_cpl, read_preprocessed_bom};
+use parse::{find_ambigious_names, fix_ambigious_rows, parse_cpl, read_preprocessed_bom};
 
 pub mod components;
 pub mod parse;
@@ -18,11 +17,11 @@ fn main() -> Result<()> {
     let cpl_path =
         "/home/aakash_masud/Downloads/CANbus_verification_2025/Pick Place for PCB1.csv".to_string();
 
-    let correct_designators = parse_cpl(&cpl_path)?;
+    let cpl_data = parse_cpl(&cpl_path)?;
+    let data = fix_ambigious_rows(cpl_data, data)?;
 
-    for pair in correct_designators {
-        println!("{:?}", pair);
+    for entry in data {
+        println!("{:?}", entry);
     }
-
     Ok(())
 }
