@@ -7,7 +7,7 @@
 use anyhow::Result;
 use std::io;
 
-use parse::read_preprocessed_bom;
+use parse::{find_ambigious_names, parse_cpl, read_preprocessed_bom};
 
 pub mod components;
 pub mod parse;
@@ -15,9 +15,13 @@ pub mod parse;
 fn main() -> Result<()> {
     let data =
         read_preprocessed_bom("/home/aakash_masud/Projects/bom_forge/test_BOMs/BOM_CAN_Ver.csv")?;
+    let cpl_path =
+        "/home/aakash_masud/Downloads/CANbus_verification_2025/Pick Place for PCB1.csv".to_string();
 
-    for entry in data {
-        println!("{:?}", entry);
+    let correct_designators = parse_cpl(&cpl_path)?;
+
+    for pair in correct_designators {
+        println!("{:?}", pair);
     }
 
     Ok(())

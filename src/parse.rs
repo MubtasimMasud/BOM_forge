@@ -1,5 +1,5 @@
-use anyhow::Result;
-use csv::ReaderBuilder;
+use anyhow::{Context, Result, anyhow, bail};
+use csv::{ReaderBuilder, StringRecord};
 use std::collections::HashMap;
 use thiserror;
 
@@ -51,4 +51,70 @@ fn extract_field(
         }
     }
     String::new()
+}
+
+pub fn find_ambigious_names(rows: Vec<PreprocessedBOMEntry>) -> Vec<String> {
+    let mut ambigious_elements = Vec::new();
+
+    for row in rows {
+        if row.name.clone().split(',').count() > 1 {
+            ambigious_elements.push(row.name);
+        }
+    }
+    ambigious_elements
+}
+// Seeing what values are designated to which designators to address ambigious Name Coulms
+// returns Hashmap<Designator, Value> from the CPL file
+pub fn parse_cpl(path: &str) -> Result<HashMap<String, String>> {
+    let mut rdr = ReaderBuilder::new().has_headers(false).from_path(path)?;
+
+    //Finding the header within the CPL file cuz it has an annoying title block
+    let mut header: Option<StringRecord> = None;
+    for result in rdr.records() {
+        let record = result?;
+        if record.get(0).map(|s| s.trim()) == Some("Designator") {
+            header = Some(record);
+            break;
+        }
+    }
+    let header = header.ok_or_else(|| anyhow!("bruh where is the header in this csv file"))?;
+
+    let header_map: HashMap<&str, usize> = header
+        .iter()
+        .enumerate()
+        .map(|(i, h)| (h.trim(), i))
+        .collect();
+
+    // adjust if your “comment” column is named differently
+    let designator_index = *header_map
+        .get("Designator")
+        .ok_or_else(|| anyhow!("invalid index"))?;
+    let comment_index = *header_map
+        .get("Comment")
+        .ok_or_else(|| anyhow!("invalid index"))?;
+
+    let mut parts_map: HashMap<String, String> = HashMap::new();
+    for result in rdr.records() {
+        let record = result?;
+        let designator = record
+            .get(designator_index)
+            .map(str::trim)
+            .ok_or_else(|| anyhow!("could not get designator"))?
+            .to_string();
+        let comment = record
+            .get(comment_index)
+            .map(str::trim)
+            .ok_or_else(|| anyhow!("could not get comment"))?
+            .to_string();
+
+        parts_map.insert(designator, comment);
+    }
+    Ok(parts_map)
+}
+
+fn get_replacements_for_ambigious(
+    cpl_parts_map: HashMap<String, String>,
+    bom_entries: Vec<PreprocessedBOMEntry>,
+) -> Vec<PreprocessedBOMEntry> {
+    todo!()
 }
