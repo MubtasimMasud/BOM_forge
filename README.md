@@ -1,14 +1,20 @@
 # BOM_forge
 An Altium BOM parser that finds you available parts from LCSC and Mouser.
-# Rationale
+# Rationale and Mission.
 Automating Tedious BOM prep in embedded systems teams and removing (time)costly BOM mistakes.
+
+Using the same footprint+symbol for every resistor and capacitor and renaming(or changing the comment) it for all values is nice for workflow and consistence of footprints. Quite often, the specific part number or source of the symbol and footprint you place does not matter. For a specific resistor, you might just want any resistor with the resistance to a specific tolerance package, and while compiling the BOM you're looking for the best deal with the best avaliability. 
+
+A counter argument is the annoying side effects of using the same symbols. Taking a 100nF capacitor and renaming it to use as a 4.7uF, 10uF and 22uF, might produce several capacitors grouped with a "100nF, 4.7uF, 10uF, 22uF" name. Face Palm emoji.
+
+This script aims to fix annoying side effects as well as automate the process of manually finding LCSC links and numbers for each part. 
+
 # Roadmap
 ## Core
-- [ ] Rust Project setup: Clap, anyhow + thiserror, tokio.
-- [ ] Data Structures for Resistors, Capacitors and ICs.
-- [ ] Parsing Altium and KiCAD BOMs.
+- [x] Data Structures for Resistors, Capacitors and ICs.
+- [x] Parsing Altium BOMs.
 - [ ] HTTP + HTML scraping for LCSC.
-- [ ] Mouser API Implementation.
+- [ ] Mouser Fallback
 - [ ] Final BOM Building.
 ## After Core
 - [ ] Front end through egui or iced.
