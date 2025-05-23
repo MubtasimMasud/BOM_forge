@@ -146,7 +146,11 @@ fn get_replacements_for_ambigious(
     let mut fixed_rows: Vec<PreprocessedBOMEntry> = Vec::new();
     for case in cases {
         // find designators for each value(name)
-        let names: Vec<String> = case.clone().split(',').map(|s| s.to_string()).collect();
+        let names: Vec<String> = case
+            .clone()
+            .split(',')
+            .map(|s| s.trim().to_string())
+            .collect();
         for name in names {
             let entry = PreprocessedBOMEntry {
                 name: name.clone(),

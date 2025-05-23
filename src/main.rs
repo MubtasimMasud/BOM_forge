@@ -17,9 +17,16 @@ fn main() -> Result<()> {
     let cpl_path =
         "/home/aakash_masud/Downloads/CANbus_verification_2025/Pick Place for PCB1.csv".to_string();
 
+    let ambigious = find_ambigious_names(data.clone());
+    println!("Ambigious Names");
+    println!("====================================================");
+    for name in ambigious {
+        println!("{:?} ewwwwwww", name);
+    }
+    println!("====================================================");
     let cpl_data = parse_cpl(&cpl_path)?;
-    let data = fix_ambigious_rows(cpl_data, data)?;
 
+    let data = fix_ambigious_rows(cpl_data, data)?;
     for entry in data {
         println!("{:?}", entry);
     }
